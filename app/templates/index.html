@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for dolar in data %}
+    <p>{{ dolar.name}}</p>
+    {{ dolar.data|safe }}
+    {% endfor %}
+{% endblock %}
